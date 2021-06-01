@@ -1,0 +1,6 @@
+**/__pycache__
+.env
+.gcloudignore
+out.txt
+test.py
+xd/

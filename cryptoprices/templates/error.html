@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="container-output">
+            <h1>
+                Invalid entry; try again.
+                <br>
+                <br>
+                <div class="home-button">
+                    <a href = '../'><img src="{{ url_for('static', filename='home.png') }}"/></a>
+                </div>
+            </h1>
+        </div>
+    </body>
+</html>

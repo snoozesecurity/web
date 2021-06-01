@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>crypto converter</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>select your crypto</h1>
+            <div class="grid">
+                <div class="floating1"><a href="{{url_for('getAmount', cryptochoice='1')}}"><img src="{{ url_for('static', filename='btc.png') }}"/></a></div>
+                <div class="floating2"><a href="{{url_for('getAmount', cryptochoice='1027')}}"><img src="{{ url_for('static', filename='eth.png') }}"/></a></div>
+                <div class="floating4"><a href="{{url_for('getAmount', cryptochoice='52')}}"><img src="{{ url_for('static', filename='xrp.png') }}"/></a></div>
+                <div class="floating3"><a href="{{url_for('getAmount', cryptochoice='2')}}"><img src="{{ url_for('static', filename='ltc.png') }}"/></a></div>
+                <div class="floating2"><a href="{{url_for('getAmount', cryptochoice='74')}}"><img src="{{ url_for('static', filename='doge.png') }}"/></a></div>
+                <div class="floating1"><a href="{{url_for('getAmount', cryptochoice='2010')}}"><img src="{{ url_for('static', filename='ada.png') }}"/></a></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,297 @@
+/* Lots of copying/pasting CSS took place in this stylesheet */
+
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #70bg32;
+    background-repeat:no-repeat;
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+body {
+    top: 5%;
+    position: relative;
+    overflow: visible;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+@media (max-aspect-ratio: 4/3) {
+    body {
+        top: 15%;
+    }
+}
+
+h1 {
+    font-size:3vw;
+    text-align: center;
+}
+
+@media (max-aspect-ratio: 4/3) {
+    h1 {
+        font-size:6vw;
+        text-align: center;
+    }
+}
+
+h2 {
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+input {
+    box-shadow: 4px 4px 0px #959595;
+    height: 8vh;
+    width: 90%;
+    font-size: 6vh;
+}
+
+input[type=submit] {
+    background-color: #bec7cf;
+}
+
+p {
+    font-size: 2vw;
+}
+
+@media (max-aspect-ratio: 4/3) {
+    p {
+        font-size: 3vw;
+    }
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    width: 40%;
+}
+
+
+@media (max-aspect-ratio: 4/3) {
+    .container {
+        margin-top: -10%;
+        width: 100%;
+        height: 80%;
+    }
+}
+
+.container-form {
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 40%;
+}
+
+
+@media (max-aspect-ratio: 4/3) {
+    .container-form {
+        margin-top: 25%;
+        width: 95%;
+        height: 80%
+    }
+}
+
+.container-output {
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 60%;
+}
+
+
+@media (max-aspect-ratio: 4/3) {
+    .container-output {
+        margin-top: 25%;
+        width: 95%;
+        height: 80%;
+        font-size: 2vw;
+        border: 0px;
+    }
+    h2 {
+        font-size: 3.5vw;
+    }
+}
+
+.grid {
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.2));
+    display:grid;
+    justify-content: space-around;
+    width: 90%;
+    grid-template-columns: 30% 30%;
+    grid-row: auto auto;
+    margin: 0 auto;
+}
+
+@media (max-aspect-ratio: 4/3) {
+    .grid {
+        width: 100%;
+        height: 80%
+    }
+}
+
+.home-button {
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.2));
+}
+
+.floating1 {  
+    animation-name: floating1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: -4%;
+    width: 90%;
+    margin-top: 5px;
+}
+
+@keyframes floating1 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(7px, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+.floating2 {  
+    animation-name: floating2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    margin-left: 2%;
+    width: 90%;
+    margin-top: 4px;
+}
+
+@keyframes floating2 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(-4px, 17px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+.floating3 {  
+    animation-name: floating3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    margin-left: -1%;
+    width: 90%;
+    margin-top: 7px;
+}
+
+@keyframes floating3 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(2px, 12px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+.floating4 {  
+    animation-name: floating3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    margin-left: 3%;
+    width: 90%;
+    margin-top: 8px;
+}
+
+@keyframes floating4 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(4px, 10px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+/* Lowered opacity for input field placeholder text */
+
+::-webkit-input-placeholder {
+    opacity: 0.15;
+}
+  
+:-moz-placeholder { /* Firefox 18- */
+    opacity: .15;
+}
+  
+::-moz-placeholder { /* Firefox 19+ */
+    opacity: .15;
+}
+  
+:-ms-input-placeholder { /* IE 10+ */
+    opacity: 0.15;
+}
+  
+::-ms-input-placeholder { /* Edge */
+    opacity: 0.15;
+}
+
+:placeholder-shown { /* Standard one last! */
+    opacity: 1;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+  
+button {
+    margin-top: 2vh;
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-55%, -120%);
+    width: 6vw;
+    height: 3vw;
+    line-height: 1;
+    font-size: .35em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 3px solid #708291;
+    background: #fff;
+    color: #708291;
+    border-radius: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+@media (max-aspect-ratio: 4/3) {
+    button {
+        font-size: .5em;
+        margin-top: 2vh;
+        width: 18vw;
+        height: 8vw;
+    }
+}
+  
+button:hover {
+    background: #708291;
+    color: #fff;
+  }
+  
+.success {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .35s;
+}

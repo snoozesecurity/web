@@ -1,0 +1,4 @@
+google-cloud-storage>=1.37.0
+Flask>=1.1.2
+python-decouple>=3.4
+requests>=2.22.0
