@@ -1,4 +1,4 @@
-# btcpricetest
+# cryptoprices
 
 Simple full stack web app that takes user's crypto amount and returns USD value.  Requires the following GCP Services:
 
